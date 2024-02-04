@@ -1,0 +1,425 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Images/icon.png" type="image/png">
+  <title>Men's FIH Hockey World Cup</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- fontawesome link 
+   -->
+   <script src="https://kit.fontawesome.com/d59ff56f0b.js" crossorigin="anonymous"></script>
+  <!-- tailwind cdn Link  -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .center{display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border: 1px solid red;}
+  </style>
+  <!-- DaisyUI CDN  -->  
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="w-11/12 m-auto">
+    <header class="relative lg:mb-16">
+    <div class="navbar bg-base-100 ">
+        <div class="navbar-start">
+          <div class="dropdown flex ">
+            <div tabindex="0" role="button" class="lg:hidden btn btn-ghost btn-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+            </div>
+            <ul tabindex="0" class=" menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Homepage</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>About</a></li>
+            </ul>
+            <a class="btn btn-ghost lg:text-3xl font-extrabold sm:text-xl ">Hockey<span class="text-[#FF4240] p-0 m-0 w-0">'</span>s</a>
+
+          </div>
+        </div>
+        <div class="navbar-center hidden lg:flex lg:gap-4 justify-between gap-8  w-auto ">
+               <a href="" class="text-[#FF4240] text-base font-bold">Homepage</a>
+                <a href="" class="text-[#424247] text-base font-normal">About</a>
+                <a href="" class="text-[#424247] text-base font-normal">Pages</a>
+                <a href="" class="text-[#424247] text-base font-normal">Blog</a>
+                <a href="" class="text-[#424247] text-base font-normal">Contact</a>
+        </div>
+        <div class="navbar-end gap-4">
+          <button class="btn btn-ghost btn-circle sm:border-2  sm:w-5 lg:w-9">
+            <svg xmlns="http://www.w3.org/2000/svg" class="" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+          </button>
+          <button class=" bg-[#FD4170]  lg:px-5 lg:py-3 lg:rounded-xl last:font-bold lg:text-xl  sm:px-1 sm:text-sm text-white">Get Ticket</button>
+        </div>
+      </div>
+      <!--baner contaner-->
+      <div class="carousel">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="Images/1.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-4 top-1/2 ">
+            <a href="#slide4" class="btn btn-circle sm:w-3 sm:h-4 sm:rounded-e-full lg:w-6 lg:h-5 lg:rounded ">❮</a> 
+            <a href="#slide2" class="btn btn-circle sm:w-3 sm:h-4 sm:rounded-e-full lg:w-6 lg:h-5 lg:rounded ">❯</a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="Images/2.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle sm:w-3 sm:h-4 sm:rounded-e-full lg:w-6 lg:h-5 lg:rounded  ">❮</a> 
+            <a href="#slide3" class="btn btn-circle sm:w-3 sm:h-4 sm:rounded-e-full lg:w-6 lg:h-5 lg:rounded ">❯</a>
+          </div>
+        </div> 
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="Images/3.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle sm:w-3 sm:h-4 sm:rounded-e-full lg:w-6 lg:h-5 lg:rounded ">❮</a> 
+            <a href="#slide1" class="btn btn-circle sm:w-3 sm:h-4 sm:rounded-e-full lg:w-6 lg:h-5 lg:rounded ">❯</a>
+          </div>
+        </div> 
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="Images/4.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle sm:w-3 sm:h-4 sm:rounded-e-full lg:w-6 lg:h-5 lg:rounded ">❮</a> 
+            <a href="#slide3" class="btn btn-circle sm:w-3 sm:h-4 sm:rounded-e-full lg:w-6 lg:h-5 lg:rounded ">❯</a>
+          </div>
+        </div>
+   
+    </div>
+     <!-- baner black section  -->
+     <div class="bg-black text-white sm:*:relative sm:mt-7 sm:mb-7   lg:w-2/5 lg:absolute lg:bottom-16 lg:right-3 rounded-lg p-4">
+        <h1 class="sm:font-bold sm:text-2xl text-white ">Final tournament</h1>
+        <p class="text-gray-500 sm:text-xl   lg:text-xl">The final tournament features the continental champions and other qualified teams. Sometimes it also features the winners of the Summer Olympics' hockey competition or the continental runners-up. </p>
+      </div>
+      <!--###baner black section###-->
+    <!--####baner contaner#####-->
+</header>
+   <main>
+    <!-- professional Hockeys Club  -->
+    <article class="hidden lg:pb-7 lg:w-full lg:border-t-gray-500 lg:border-gray-600 lg:border-dashed sm:border-t-2 py-5 sm:border-gray-600 sm:border-dashed">
+      <section class="w-8/12 m-auto text-center  ">
+         <h1 class="text-4xl font-extrabold mb-5">Men's FIH Hockey World Cup</h1>
+          <p class="text-gray-400 text-xl font-semibold ">International field hockey competition organised by the International Hockey Federation (FIH). The tournament was started in 1971. It is held every four years.</p>
+      </section> 
+         <!-- card   -->
+       <section class="mt-12 flex lg:flex-row lg:gap-5 lg:justify-between sm:flex-col lg:border-y-2 lg:border-gray-600 lg:border-dashed sm:border--2 
+       py-5 sm:border-gray-600 sm:border-dashed">
+        <div class="card  bg-base-100">
+          <figure class="px-10 pt-10">
+           <div class="radial-progress  text-red-600" style="--value:87;" role="progressbar"><b class="text-slate-950">87%</b></div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Prayer Facility</h2>
+            <p>A multifaith space or multifaith prayer room is a quiet location set aside in a busy  </p>
+          </div>
+        </div>
+        <div class="card  bg-base-100">
+          <figure class="px-10 pt-10">
+           <div class="radial-progress  text-green-700" style="--value:95;" role="progressbar"><b class="text-slate-950">95%</b></div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Experienced Coach</h2>
+            <p>Fulfilling the duties and responsibilities of a hockey coach requires attention to 
+               </p>
+          </div>
+        </div>
+        <div class="card  bg-base-100">
+          <figure class="px-10 pt-10">
+           <div class="radial-progress text-yellow-500" style="--value:90;" role="progressbar"><b class="text-slate-950">90%</b></div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Senir Player</h2>
+            <p>A sport for all ages, senior hockey generally describes hockey played by anyone over
+            </p>
+          </div>
+        </div>
+        <div class="card  bg-base-100">
+          <figure class="px-10 pt-10">
+           <div class="radial-progress text-blue-700" style="--value:80;" role="progressbar"><b class="text-slate-950">80%</b></div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Training Ground</h2>
+            <p>Squats, glute bridges, and lunges are good exercises to include when building </p>
+          </div>
+        </div>
+       </section>
+    </article>
+    <!-- programm section  -->
+    <article class="mt-16 border mb-16">
+         <section class="lg:w-3/5 lg:m-auto text-center mt-16 ">
+          <h1 class="font-extrabold text-4xl">Hockey Bangladesh <br> Development Programs and Resources</h1>
+          <p class="mt-5 border mb-8">Welcome to Hockey Canada Programs. Here you will find alternatives on how you can get involved in hockey. We want all Canadians involved in the game, so we are creating more opportunities for more people to play hockey in more ways.</p>
+         </section>
+         <!-- card  -->
+         <section class="grid gap-6 lg:grid-cols-2 grid-rows-2">
+          <div class="hero rounded-xl" style="background-image:url(Images/2.png);">
+            <div class="hero-overlay rounded-xl bg-opacity-60"></div>
+            <div class="hero-content text-left text-neutral-content justify-start p-8">
+              <div class="w-9/12">
+                <h1 class="mb-5 text-5xl font-bold">Junior Program</h1>
+                <p class="mb-5">Hockey's junior program provides opportunities for players ages 16-to-20 to hone and enhance their skills and is an important part of the organization's overall efforts related to player development. </p>
+                <button class="btn btn-primary bg-red-600 border-none text-white ">Register Now!</button>
+              </div>
+            </div>
+          </div>
+          <div class="hero rounded-xl" style="background-image:url(Images/3.png);">
+            <div class="hero-overlay rounded-xl bg-opacity-60"></div>
+            <div class="hero-content text-left text-neutral-content justify-start p-8">
+              <div class="w-9/12">
+                <h1 class="mb-5 text-5xl font-bold">Teenager Program</h1>
+                <p class="mb-5">this 8 week program is designed for new and beginner level skaters ages 10+ that are interested in learning the game of hockey. Skaters will meet once per week for skills sessions that will engage them in ho</p>
+                <button class="btn btn-primary bg-red-600 border-none text-white ">Register Now!</button>
+              </div>
+            </div>
+          </div>
+          <div class=" hero rounded-xl lg:col-span-2" style="background-image:url(Images/4.png);">
+            <div class="hero-overlay rounded-xl bg-opacity-60"></div>
+            <div class="hero-content text-left text-neutral-content justify-start py-9">
+              <div class="lg:w-7/12  sm:w-full">
+                <h1 class="mb-5 text-5xl font-bold">Professional Program</h1>
+                <p class="mb-5">The PSA Hockey Skating program is designed to teach skating instructors the proper methods of teaching hockey skating. The primary focus is up-to-date techniques to help hockey players become better skaters. Courses are progressive with one building upon the other. There are currently four levels of certification from Hockey Skating 1 to Hockey Skating 4. Hockey Skating 1, 2, and 3 are currently offered in the e-learning platform. Hockey Skating 4 may be offered at the PSA Summit or a hockey-specific seminar or clinic.</p>
+                <button class="btn btn-primary bg-red-600 border-none text-white ">Register Now!</button>
+              </div>
+            </div>
+          </div>
+         </section>
+    </article>
+    <!-- Our New Products  -->
+    <article class="mb-24 w-full">
+      <div class="border-y-2 border-dotted border-gray-500 mb-11 pt-9">
+     <section class="w-8/12 m-auto text-center mb-12">
+       <h1 class="text-4xl font-extrabold mb-5">Our New Products</h1>
+       <p class="text-gray-400 text-xl font-semibold">Game-changing Protection Protection and Performance for everyone that plays the game.</p>
+     </section>
+    </div>
+     <!-- card  -->
+     <section class="grid lg:grid-cols-2 lg:grid-rows-3 lg:gap-5 sm:grid-cols-1 sm:grid-rows-6  sm:gap-20">
+           
+        <div class="flex lg:flex-row sm:flex-col gap-4 sm:justify-center sm:items-center sm:gap-4">
+          <img src="Images/5.png" class="sm:w-full rounded-lg " />
+          <div class="flex flex-col justify-center gap-2 p-4 sm:w-full">
+            <div class="flex justify-start gap-2 items-center">  
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+                <p class="text-2xl font-bold">5.5</p>
+             <img width="20px" class="sm:w-10" src="Images/eye-solid.svg" alt="">
+            <p class="text-2xl font-bold">20</p>
+             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 25 25" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+             <p class="text-2xl font-bold">200</p>
+            </div>
+            <h1 class="text-4xl font-bold">Box Office News!</h1>
+            <p class="text-2xl">Provident cupiditate voluptatem et in. Quaerat fugiat ut </p>
+            <div class="price flex items-center justify-between  sm:flex-col sm:items-start sm:gap-4">
+              <p class="text-3xl font-extrabold text-red-600">Price- $22.00</p>
+              <div class="flex gap-1">
+              <img width="25px" src="Images/cart-shopping-solid.svg" alt="">
+              <p class="font-extrabold text-2xl">Delivery Fee : Free</p>
+            </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex lg:flex-row sm:flex-col gap-4 sm:justify-center sm:items-center sm:gap-4">
+          <img src="Images/6.png" class="sm:w-full rounded-lg " />
+          <div class="flex flex-col justify-center gap-2 p-4 sm:w-full">
+            <div class="flex justify-start gap-2 items-center">  
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+                <p class="text-2xl font-bold">5.5</p>
+             <img width="20px" class="sm:w-10" src="Images/eye-solid.svg" alt="">
+            <p class="text-2xl font-bold">20</p>
+             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 25 25" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+             <p class="text-2xl font-bold">200</p>
+            </div>
+            <h1 class="text-4xl font-bold">Box Office News!</h1>
+            <p class="text-2xl">Provident cupiditate voluptatem et in. Quaerat fugiat ut </p>
+            <div class="price flex items-center justify-between  sm:flex-col sm:items-start sm:gap-4">
+              <p class="text-3xl font-extrabold text-red-600">Price- $22.00</p>
+              <div class="flex gap-1">
+              <img width="25px" src="Images/cart-shopping-solid.svg" alt="">
+              <p class="font-extrabold text-2xl">Delivery Fee : Free</p>
+            </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex lg:flex-row sm:flex-col gap-4 sm:justify-center sm:items-center sm:gap-4">
+          <img src="Images/7.png" class="sm:w-full rounded-lg " />
+          <div class="flex flex-col justify-center gap-2 p-4 sm:w-full">
+            <div class="flex justify-start gap-2 items-center">  
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+                <p class="text-2xl font-bold">5.5</p>
+             <img width="20px" class="sm:w-10" src="Images/eye-solid.svg" alt="">
+            <p class="text-2xl font-bold">20</p>
+             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 25 25" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+             <p class="text-2xl font-bold">200</p>
+            </div>
+            <h1 class="text-4xl font-bold">Box Office News!</h1>
+            <p class="text-2xl">Provident cupiditate voluptatem et in. Quaerat fugiat ut </p>
+            <div class="price flex items-center justify-between  sm:flex-col sm:items-start sm:gap-4">
+              <p class="text-3xl font-extrabold text-red-600">Price- $22.00</p>
+              <div class="flex gap-1">
+              <img width="25px" src="Images/cart-shopping-solid.svg" alt="">
+              <p class="font-extrabold text-2xl">Delivery Fee : Free</p>
+            </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex lg:flex-row sm:flex-col gap-4 sm:justify-center sm:items-center sm:gap-4">
+          <img src="Images/8.png" class="sm:w-full rounded-lg " />
+          <div class="flex flex-col justify-center gap-2 p-4 sm:w-full">
+            <div class="flex justify-start gap-2 items-center">  
+              <div class="rating">
+                <input type="radio" name="rating-2" class="h-9 mask mask-star-2 bg-orange-400" />
+              </div>
+                <p class="text-2xl font-bold">5.5</p>
+             <img width="20px" class="sm:w-10" src="Images/eye-solid.svg" alt="">
+            <p class="text-2xl font-bold">20</p>
+             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 25 25" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+             <p class="text-2xl font-bold">200</p>
+            </div>
+            <h1 class="text-4xl font-bold">Box Office News!</h1>
+            <p class="text-2xl">Provident cupiditate voluptatem et in. Quaerat fugiat ut </p>
+            <div class="price flex items-center justify-between  sm:flex-col sm:items-start sm:gap-4">
+              <p class="text-3xl font-extrabold text-red-600">Price- $22.00</p>
+              <div class="flex gap-1">
+              <img width="25px" src="Images/cart-shopping-solid.svg" alt="">
+              <p class="font-extrabold text-2xl">Delivery Fee : Free</p>
+            </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex lg:flex-row sm:flex-col gap-4 sm:justify-center sm:items-center sm:gap-4">
+          <img src="Images/9.png" class="sm:w-full rounded-lg " />
+          <div class="flex flex-col justify-center gap-2 p-4 sm:w-full">
+            <div class="flex justify-start gap-2 items-center">  
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+                <p class="text-2xl font-bold">5.5</p>
+             <img width="20px" class="sm:w-10" src="Images/eye-solid.svg" alt="">
+            <p class="text-2xl font-bold">20</p>
+             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 25 25" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+             <p class="text-2xl font-bold">200</p>
+            </div>
+            <h1 class="text-4xl font-bold">Box Office News!</h1>
+            <p class="text-2xl">Provident cupiditate voluptatem et in. Quaerat fugiat ut </p>
+            <div class="price flex items-center justify-between  sm:flex-col sm:items-start sm:gap-4">
+              <p class="text-3xl font-extrabold text-red-600">Price- $22.00</p>
+              <div class="flex gap-1">
+              <img width="25px" src="Images/cart-shopping-solid.svg" alt="">
+              <p class="font-extrabold text-2xl">Delivery Fee : Free</p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex lg:flex-row sm:flex-col gap-4 sm:justify-center sm:items-center sm:gap-4">
+          <img src="Images/10.png" class="sm:w-full rounded-lg " />
+          <div class="flex flex-col justify-center gap-2 p-4 sm:w-full">
+            <div class="flex justify-start gap-2 items-center">  
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+                <p class="text-2xl font-bold">5.5</p>
+             <img width="20px" class="sm:w-10" src="Images/eye-solid.svg" alt="">
+            <p class="text-2xl font-bold">20</p>
+             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 25 25" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+             <p class="text-2xl font-bold">200</p>
+            </div>
+            <h1 class="text-4xl font-bold">Box Office News!</h1>
+            <p class="text-2xl">Provident cupiditate voluptatem et in. Quaerat fugiat ut </p>
+            <div class="price flex items-center justify-between  sm:flex-col sm:items-start sm:gap-4">
+              <p class="text-3xl font-extrabold text-red-600">Price- $22.00</p>
+              <div class="flex gap-1">
+              <img width="25px" src="Images/cart-shopping-solid.svg" alt="">
+              <p class="font-extrabold text-2xl">Delivery Fee : Free</p>
+            </div>
+            </div>
+          </div>
+        </div>
+     </section>
+    </article>
+    <!-- Clients Question Section  -->
+    <article class="mb-16">
+      <article class="mb-24 w-full">
+        <div class="border-gray-500 mb-11 pt-9">
+       <section class="w-8/12 m-auto text-center mb-12">
+         <h1 class="text-5xl font-extrabold mb-5">Common Question</h1>
+         <p class="text-gray-400 text-xl font-semibold">Which is tougher for the goalie to stop a slap shot or a wrist shot? A: The slap shot, while it is harder and faster.</p>
+       </section>
+   
+    <section class="rounded-3xl p-5 flex lg:flex-row sm:flex-col gap-4 sm:justify-center sm:items-center sm:gap-4">
+      <img class="lg:w-10/12" src="Images/11.png" alt="">
+    <div class="join join-vertical gap-7 w-full  px-4">
+      <div class=" sm:mt-10 collapse collapse-arrow join-item border-b-2 border-base-300">
+        <input type="radio" name="my-accordion-4" checked="checked" /> 
+        <div class="collapse-title text-3xl font-extrabold">
+          Our Equipment
+        </div>
+        <div class="collapse-content"> 
+          <p>This usually includes a helmet, shoulder pads/chest protector, elbow pads, mouth guard, protective gloves, heavily padded shorts, a 'jock' athletic protector, shin pads and a neck guard. </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow join-item border-b-2 border-base-300">
+        <input type="radio" name="my-accordion-4" /> 
+        <div class="collapse-title text-3xl font-extrabold">
+          Hockey Training
+        </div>
+        <div class="collapse-content"> 
+          <p>Hockey training tips and videos to help you become a better hockey player. We provide you with workouts and drills you can do to become a faster, better ...</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow join-item border-b-2 border-base-300">
+        <input type="radio" name="my-accordion-4" /> 
+        <div class="collapse-title text-3xl font-extrabold">
+          Private Lessons
+        </div>
+        <div class="collapse-content"> 
+          <p>With private lessons, you can definitely increase your skill level...but you also need to supplement it with real physical competition as well, whether in games ...</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow join-item border-b-2 border-base-300">
+        <input type="radio" name="my-accordion-4" /> 
+        <div class="collapse-title text-3xl font-extrabold">
+          Ski Touring
+        </div>
+        <div class="collapse-content"> 
+          <p>Ski touring is skiing in the backcountry on unmarked or unpatrolled areas. Touring is typically done off-piste and outside of ski resorts, and may extend ...</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow join-item border-b-2 border-base-300">
+        <input type="radio" name="my-accordion-4" /> 
+        <div class="collapse-title text-3xl font-extrabold">
+          Booking
+        </div>
+        <div class="collapse-content"> 
+          <p>booking fee charges. Events that do incur a fee will always be clearly labeled when purchasing tickets. KOKEY. ©2024 KTX.PH. Terms & Conditions | Privacy ...
+        </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow join-item border-b-2 border-base-300">
+        <input type="radio" name="my-accordion-4" /> 
+        <div class="collapse-title text-3xl font-extrabold">
+         pricings
+        </div>
+        <div class="collapse-content"> 
+          <p>The average selling price for the cookies on Castiron was $49.80 note: there are other cookies priced higher and lower on the platform, but we ..</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</article>
+<article>
+  get 
+</article>
+   </main>
+</body>
+</html>
